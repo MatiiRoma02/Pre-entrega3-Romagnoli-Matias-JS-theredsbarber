@@ -1,0 +1,181 @@
+</html>
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Montserrat:ital,wght@0,400;0,700;1,600&display=swap');
+    </style>
+    <link rel="stylesheet" href="../CSS/productos2.0.css">
+    <link rel="shortcut icon" href="../IMG/the red's.png" type="image/x-icon">
+    <title>PRODUCTOS</title>
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg navbar-light">
+        <a href="./inicio.html" class="logoBarberia"><img class="logoBarberia" src="../IMG/the red's.png" alt=""></a>
+
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+            aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav">
+                <li class="nav-item active">
+                    <a class="nav-link" href="./inicio.html">Inicio</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="./acercademi.html">Acerca de mi</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="./servicios.html">Servicios</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="./productos2.0.html">Productos</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="./contacto.html">Contacto</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="../index.html">Salir</a>
+                </li>
+                <li class="nav-item">
+
+                    <img id="btn-modo" onclick="cambiarColor()" class="modo" src="../IMG/mode.png" alt=""></a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Cards -->
+
+
+
+    <style>
+        body {
+            background-color: #dbd9d9;
+        }
+    </style>
+    <script>
+        var colores = ['#272727', '#dbd9d9'];
+        var indiceColor = 0;
+
+        function cambiarColor() {
+            indiceColor = (indiceColor + 1) % colores.length;
+            var color = colores[indiceColor];
+            document.body.style.backgroundColor = color;
+        }
+    </script>
+
+
+    <!-- 
+    <div class="container">
+
+        <h2>Productos</h2>
+
+
+        <div class="row">
+
+            <div class="col">
+
+                <div class="row row-cols-1 row-cols-md-3 g-4">
+
+                    <div class="col">
+                        <div class="card">
+                            <img src="../IMG/the red's.png" class="card-img-top" alt="../IMG/the red's.png">
+                            <div class="card-body">
+                                <h5 class="card-title">Card title</h5>
+                                <p class="card-text">This is a longer card with supporting text below as a natural
+                                    lead-in to additional content. This content is a little bit longer.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col">
+                        <div class="card">
+                            <img src="../IMG/the red's.png" class="card-img-top" alt="../IMG/the red's.png">
+                            <div class="card-body">
+                                <h5 class="card-title">Card title</h5>
+                                <p class="card-text">This is a longer card with supporting text below as a natural
+                                    lead-in to additional content. This content is a little bit longer.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col">
+                        <div class="card">
+                            <img src="../IMG/the red's.png" class="card-img-top" alt="../IMG/the red's.png">
+                            <div class="card-body">
+                                <h5 class="card-title">Card title</h5>
+                                <p class="card-text">This is a longer card with supporting text below as a natural
+                                    lead-in to additional content.</p>
+                            </div>
+                        </div>
+                    </div>
+
+
+                    <div class="col">
+                        <div class="card">
+                            <img src="../IMG/the red's.png" class="card-img-top" alt="../IMG/the red's.png">
+                            <div class="card-body">
+                                <h5 class="card-title">Card title</h5>
+                                <p class="card-text">This is a longer card with supporting text below as a natural
+                                    lead-in to additional content. This content is a little bit longer.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+ -->
+
+    <div class="container">
+
+        <div class="row">
+
+            <div class="col">
+                <h2>✨Nuestros Productos✨</h2>
+
+                <div id="contenedorProductos" class="row row-cols-1 row-cols-md-3 g-4">
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+    <br><br>
+
+    <div class="container">
+        <input type="text" id="messageInput" placeholder="Ingrese un mensaje">
+
+        <button id="saveButton" class="btn btn-primary" type="button">Enviar Mensaje</button>
+    </div>
+
+    <div id="messageList"></div>
+
+
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="../JS/productos2.0.js"></script>
+    <script src="//cdn.jsdelivr.net/npm/sweetalert2@10"></script>
+
+
+
+    <footer class="footer text-center">
+        <div class="container">
+          <span>© 2023 <b>The Red's Barber </b>and <b>Matías Romagnoli</b>. <br> Todos los derechos reservados.</span>
+        </div>
+      </footer>
+
+
+
+</body>
+
+</html>
